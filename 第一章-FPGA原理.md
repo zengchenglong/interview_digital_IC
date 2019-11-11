@@ -19,4 +19,25 @@ LUT主要用于实现组合逻辑功能，其本质是一个RAM。目前FPGA中�
 <p align="center">  
     表1-1 4输入与门增值表
 <p align="center">  
-    <img src=https://github.com/zcl-tju/interview_digital_IC/blob/master/img/list1-1.jpg width="60%" height="60%"/> 
+    <img src=https://github.com/zcl-tju/interview_digital_IC/blob/master/img/list1-1.jpg width="60%" height="60%"/>  
+
+### 3 FPGA设计流程
+* 功能定义/器件选型 (详述)
+* 设计输入 (RTL设计)
+* 功能仿真 (验证代码功能的正确性)
+* 综合 (将RTL映射为门级逻辑网表)
+* 综合后仿真 (仿真模型中添加标准延时文件)
+* 实现与布局布线 (将逻辑网表映射到FPGA开发板上，并连线)
+* 时序仿真 (将延时信息反标注到逻辑网表中)
+* FPGA芯片编程与调试 (常用的Debug工具有：vivado debug core, quartus signaltab)  
+
+### 4 ASIC设计基本流程及工具
+* 需求分析，架构设计，功能描述
+* RTL设计
+* 功能仿真 (vcs)
+* 逻辑综合 (DC)
+* 静态时序分析 (PT)
+* 门级仿真 (vcs)
+* DFT
+* 布局布线 (Astro)
+* 
